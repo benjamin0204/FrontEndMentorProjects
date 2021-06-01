@@ -1,0 +1,113 @@
+:root {
+    /*     COLOURS     */
+    /*     Primary     */
+    --color-primary-light: hsl(31, 77%, 52%);
+    --color-primary-dark: hsl(184, 100%, 22%);
+    --color-primary-Vdark: hsl(179, 100%, 13%);
+    /*     Neutral     */
+    --color-neutral-main: hsla(0, 0%, 100%, 0.75);
+    /* paragraphs */
+    --color-neutral-dark: hsl(0, 0%, 95%);
+    /* background, headings, buttons */
+    /*     FONTS     */
+    --ff-primary: 'Big Shoulders Display', cursive;
+    /* Weights: 700 */
+    --ff-secondary: 'Lexend Deca', sans-serif;
+    /* Weights: 400 */
+}
+
+html {
+    font-size: 62.5%;
+    /* 1 rem = 10px */
+}
+
+body {
+    Font-size: 1.5rem;
+    background-color: white;
+}
+
+h1 {
+    color: var(--color-neutral-dark);
+    font-family: var(--ff-primary);
+}
+
+p {
+    color: var(--color-neutral-main);
+    font-family: var(--ff-secondary);
+}
+
+.container {
+    padding: 15rem 20rem;
+    display: flex;
+}
+
+.card {
+    border-radius: 10px;
+    padding: 5rem;
+}
+
+.card-heading {
+    text-transform: uppercase;
+    font-size: 5rem;
+}
+
+.bg-sed {
+    background-color: var(--color-primary-light);
+}
+
+.bg-sed .card-button {
+    color: var(--color-primary-light);
+}
+
+.bg-suv {
+    background-color: var(--color-primary-dark);
+}
+
+.bg-suv .card-button {
+    color: var(--color-primary-dark);
+}
+
+.bg-lux {
+    background-color: var(--color-primary-Vdark);
+}
+
+.bg-lux .card-button {
+    color: var(--color-primary-Vdark);
+}
+
+.card-text {
+    padding-bottom: 6rem;
+}
+
+.card-button {
+    background-color: var(--color-neutral-dark);
+    border: none;
+    font-size: 1.5rem;
+    border-radius: 2.5rem;
+    padding: 1rem 2rem;
+    border: .2rem solid transparent;
+}
+
+.card-button:hover {
+    background-color: transparent;
+    color: var(--color-neutral-dark);
+    border: .2rem solid var(--color-neutral-dark);
+}
+
+/* GIVEN STYLES */
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+/* 
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+*/
