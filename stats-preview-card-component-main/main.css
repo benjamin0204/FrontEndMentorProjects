@@ -26,16 +26,15 @@ html{
 
 body{
     background-color: var(--color-primary-Vdark);
-    padding: 20rem;
+    padding: 5rem 2rem ;
 }
 
 .container{
     background-color:var(--color-primary-dark) ;
     border-radius: 10px;
-
     display: flex;
-
 }
+
 
 .left{
     flex: 50%;
@@ -78,16 +77,20 @@ p{
 
 
 .right {
+    flex-shrink: 0;
     flex: 50%;
-    overflow: hidden;
+    overflow: hidden;  
+    
+    /* 
     background-image: 
     linear-gradient(
         var(--color-primary-soft),
         var(--color-primary-soft)
         ),
     url(./images/image-header-desktop.jpg);
+    */
     background-blend-mode: overlay;
-    background-size: cover;    
+     background-size: cover;   
 }
 
 
@@ -95,7 +98,41 @@ p{
 
 
 
+@media (max-width: 800px) {
+    h1, p{
+        text-align: center;
+    }
+    
+    .container {
+        flex-direction: column;
+      }
 
+    .stat-container p{
+        margin: 0 auto;
+        float:none; 
+        padding-right: 0;
+        padding-bottom: 2rem;
+    }
+    
+    .right{
+        width: 32rem;
+        height: 32rem;
+        border-radius: 5px 5px 0px 0px;;
+        position:absolute; 
+
+        /* Colour over the image */
+        outline: 160px solid hsla(277, 64%, 61%, 0.5) !important;
+        outline-offset: -160px;
+    }
+
+    .left{
+        margin-top: 30rem;
+    }
+
+}
+/* Colour over the image */
+outline: 150px solid hsla(277, 64%, 61%, 0.5) !important;
+outline-offset: -150px;
 
 
 
