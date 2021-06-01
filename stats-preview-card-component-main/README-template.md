@@ -47,7 +47,7 @@ Users should be able to:
 
 ### What I learned
 
-I learned how to use felx to build a 2 column grid
+I learned how to use flex to build a 2 column grid
 
 ```css
 flex: 50%;
