@@ -1,91 +1,138 @@
-# Frontend Mentor - Stats preview card component
+# Frontend Mentor - Stats preview card component solution
 
-![Design preview for the Stats preview card component coding challenge](./design/desktop-preview.jpg)
+This is a solution to the [Stats preview card component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/stats-preview-card-component-8JqbgoU62). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
-## Welcome! 👋
+## Table of contents
 
-Thanks for checking out this front-end coding challenge.
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+  - [Continued development](#continued-development)
+  - [Useful resources](#useful-resources)
+- [Author](#author)
+- [Acknowledgments](#acknowledgments)
 
-[Frontend Mentor](https://www.frontendmentor.io) challenges help you improve your coding skills by building realistic projects.
+## Overview
 
-**To do this challenge, you need a basic understanding of HTML and CSS.**
+### The challenge
 
-## The challenge
-
-Your challenge is to build out this card component and get it looking as close to the design as possible.
-
-You can use any tools you like to help you complete the challenge. So if you've got something you'd like to practice, feel free to give it a go.
-
-Your users should be able to:
+Users should be able to:
 
 - View the optimal layout depending on their device's screen size
 
-Want some support on the challenge? [Join our Slack community](https://www.frontendmentor.io/slack) and ask questions in the **#help** channel.
+### Screenshot
 
-## Where to find everything
+![Desktop](./images/screenshotLarge.PNG)
 
-Your task is to build out the project to the designs inside the `/design` folder. You will find both a mobile and a desktop version of the design. 
+![Mobile](./images/screenshotSmall.PNG)
 
-The designs are in JPG static format. Using JPGs will mean that you'll need to use your best judgment for styles such as `font-size`, `padding` and `margin`. 
+### Links
 
-If you would like the design files (we provide Sketch & Figma versions) to inspect the design in more detail, you can [subscribe as a PRO member](https://www.frontendmentor.io/pro).
+- Solution URL: [solution URL](https://github.com/benjamin0204/FrontEndMentorProjects/tree/main/stats-preview-card-component-main)
+- Live Site URL: [live site URL](https://portfolio-project-frontendmentor-statpreviewcardcomponent.netlify.app/)
 
-You will find all the required assets in the `/images` folder. The assets are already optimized.
+## My process
 
-There is also a `style-guide.md` file containing the information you'll need, such as color palette and fonts.
+### Built with
 
-## Building your project
+- Semantic HTML5 markup
+- CSS custom properties
+- Flexbox
+- CSS Grid
+- Mobile-first workflow
 
-Feel free to use any workflow that you feel comfortable with. Below is a suggested process, but do not feel like you need to follow these steps:
+### What I learned
 
-1. Initialize your project as a public repository on [GitHub](https://github.com/). Creating a repo will make it easier to share your code with the community if you need help. If you're not sure how to do this, [have a read-through of this Try Git resource](https://try.github.io/).
-2. Configure your repository to publish your code to a web address. This will also be useful if you need some help during a challenge as you can share the URL for your project with your repo URL. There are a number of ways to do this, and we provide some recommendations below.
-3. Look through the designs to start planning out how you'll tackle the project. This step is crucial to help you think ahead for CSS classes to create reusable styles.
-4. Before adding any styles, structure your content with HTML. Writing your HTML first can help focus your attention on creating well-structured content.
-5. Write out the base styles for your project, including general content styles, such as `font-family` and `font-size`.
-6. Start adding styles to the top of the page and work down. Only move on to the next section once you're happy you've completed the area you're working on.
+I learned how to use flex to build a 2 column grid
 
-## Deploying your project
+```css
+flex: 50%;
+```
 
-As mentioned above, there are many ways to host your project for free. Our recommend hosts are:
+I also learnt how to overlay an image with a colour using an border (this is a bit scummy tbh) I initally used a background image css prop but found it difficult to code in the mobile version
 
-- [GitHub Pages](https://pages.github.com/)
-- [Vercel](https://vercel.com/)
-- [Netlify](https://www.netlify.com/)
+#### inital overlay code
 
-You can host your site using one of these solutions or any of our other trusted providers. [Read more about our recommended and trusted hosts](https://medium.com/frontend-mentor/frontend-mentor-trusted-hosting-providers-bf000dfebe).
+```css
+.right {
+  flex: 50%;
+  overflow: hidden;
+  background-image: linear-gradient(
+      var(--color-primary-soft),
+      var(--color-primary-soft)
+    ), url(./images/image-header-desktop.jpg);
+  background-blend-mode: overlay;
+  background-size: cover;
+}
+```
 
-## Create a custom `README.md`
+#### final overlay code
 
-We strongly recommend overwriting this `README.md` with a custom one. We've provided a template inside the [`README-template.md`](./README-template.md) file in this starter code.
+```css
+.right {
+  flex-shrink: 0;
+  flex: 50%;
+  overflow: hidden;
 
-The template provides a guide for what to add. A custom `README` will help you explain your project and reflect on your learnings. Please feel free to edit our template as much as you like.
+  border-radius: 5px 5px 0px 0px;
 
-Once you've added your information to the template, delete this file and rename the `README-template.md` file to `README.md`. That will make it show up as your repository's README file.
+  /* Colour over the image */
+  outline: 300px solid hsla(277, 64%, 61%, 0.5) !important;
+  outline-offset: -300px;
 
-## Submitting your solution
+  background-blend-mode: overlay;
+  background-size: cover;
+}
+```
 
-Submit your solution on the platform for the rest of the community to see. Follow our ["Complete guide to submitting solutions"](https://medium.com/frontend-mentor/a-complete-guide-to-submitting-solutions-on-frontend-mentor-ac6384162248) for tips on how to do this.
+### Continued development
 
-Remember, if you're looking for feedback on your solution, be sure to ask questions when submitting it. The more specific and detailed you are with your questions, the higher the chance you'll get valuable feedback from the community.
+I want to be able to remove all the unsavoury 'hacks' I've used in this task. I need to learn more about flexbox and how to push an image up when in mobile 'mode'
 
-## Sharing your solution
+### Useful resources
 
-There are multiple places you can share your solution:
+- [Mdn background-image](https://developer.mozilla.org/en-US/docs/Web/CSS/background-image) - this helped me with the syntax for the background image
 
-1. Share your solution page in the **#finished-projects** channel of the [Slack community](https://www.frontendmentor.io/slack). 
-2. Tweet [@frontendmentor](https://twitter.com/frontendmentor) and mention **@frontendmentor**, including the repo and live URLs in the tweet. We'd love to take a look at what you've built and help share it around.
-3. Share your solution on other social channels like LinkedIn.
-4. Blog about your experience building your project. Writing about your workflow, technical choices, and talking through your code is a brilliant way to reinforce what you've learned. Great platforms to write on are [dev.to](https://dev.to/), [Hashnode](https://hashnode.com/), and [CodeNewbie](https://community.codenewbie.org/).
+- [Medium, css variabls](https://electerious.medium.com/the-power-of-css-variables-6c4e4ebaf279) - this helped me with learning the syntax of css custom properties (I've used sass for this in the past)
 
-We provide templates to help you share your solution once you've submitted it on the platform. Please do edit them and include specific questions when you're looking for feedback. 
+- [W3School, flexbox guide](https://www.w3schools.com/css/css3_flexbox_responsive.asp) - Simple beginner friendly flex guide
 
-The more specific you are with your questions the more likely it is that another member of the community will give you feedback.
+- [W3School, border-radius](https://www.w3schools.com/cssref/css3_pr_border-radius.asp) - Syntax for border-radius (to omit the bottom changes)
 
-## Got feedback for us?
+- [Stackoverflow - elixon](https://stackoverflow.com/questions/18815157/how-to-overlay-image-with-color-in-css) - This is the solution i used for the colour overlay
 
-We love receiving feedback! We're always looking to improve our challenges and our platform. So if you have anything you'd like to mention, please email hi[at]frontendmentor[dot]io.
+```css
+.red {
+  outline: 100px solid rgba(255, 0, 0, 0.5) !important;
+  outline-offset: -100px;
+  overflow: hidden;
+  position: relative;
+  height: 200px;
+  width: 200px;
+}
+```
 
-This challenge is completely free. Please share it with anyone who will find it useful for practice.
+```html
+<div class="red">Anything can be red.</div>
+<h1>Or even image...</h1>
+<img
+  src="https://cdn.sstatic.net/Sites/stackoverflow/company/img/logos/so/so-logo.png?v=9c558ec15d8a"
+  class="red"
+/>
+```
 
-**Have fun building!** 🚀
+## Author
+
+- Website - [Ben Rogers | c[\_]](https://www.benrogers.uk)
+- Frontend Mentor - [@benjamin0204](https://www.frontendmentor.io/profile/benjamin0204)
+- github - [@benjamin0204](https://github.com/benjamin0204/FrontEndMentorProjects/tree/main/stats-preview-card-component-main)
+
+<!-- ## Acknowledgments
+
+This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
+
+**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.** -->
