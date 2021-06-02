@@ -10,11 +10,8 @@ This is a solution to the [3-column preview card component challenge on Frontend
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
   - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
 ## Overview
 
@@ -33,7 +30,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [solution](https://your-solution-url.com)
+- Solution URL: [solution](https://github.com/benjamin0204/FrontEndMentorProjects/tree/main/3-column-preview-card-component-main)
 - Live Site URL: [live site](https://portfolio-project-frontendmentor-3columnpreview.netlify.app)
 
 ## My process
