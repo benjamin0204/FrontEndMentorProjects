@@ -42,7 +42,24 @@ This is a comprehensive list of all the challenges i have done (and will do) fro
 <h3 style="color:hsl(182,82%,43%)"> 1 Newbie </h3>
 
   <ol>
-    <li>Stats preview card component - Html, Css</li>
+    <li>
+      <a herf='https://github.com/benjamin0204/FrontEndMentorProjects/tree/main/stats-preview-card-component-main'>
+      Stats preview card component 
+      </a>
+      - Html, Css
+    </li>
+    <li>
+        <a href='https://github.com/benjamin0204/FrontEndMentorProjects/tree/main/3-column-preview-card-component-main'> 
+        3-column preview card component 
+        </a>
+      - Html, Css
+    </li>
+    <li>
+        <a href='https://github.com/benjamin0204/FrontEndMentorProjects/tree/main/profile-card-component-main'>  
+        Profile card component solution
+        </a>
+      - Html, Css
+    </li>
   </ol>
 
 <h3 style="color:hsl(78,65%,55%)"> 2 Junior </h3>
