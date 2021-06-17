@@ -43,9 +43,7 @@ This is a comprehensive list of all the challenges i have done (and will do) fro
 
   <ol>
     <li>
-      <a herf='https://github.com/benjamin0204/FrontEndMentorProjects/tree/main/stats-preview-card-component-main'>
-      Stats preview card component 
-      </a>
+    <a href='https://github.com/benjamin0204/FrontEndMentorProjects/tree/main/stats-preview-card-component-main'>stats preview card component</a>
       - Html, Css
     </li>
     <li>
